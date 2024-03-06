@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whispers of the Enchanted Forest</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <div id="game-container">
+                <header>
+                    <h1>Whispers of the Enchanted Forest</h1>
+                </header>
+                <section id="story">
+                    <!-- Story text here -->
+                </section>
+                <section id="choices">
+                    <!-- Story choices here -->
+                </section>
+                <section id="image-container">
+                    <!-- Story image here -->
+                </section>
+            </div>
+
+            <footer>
+                <p>Last updated: <span id="lastModified"></span></p>
+            </footer>
+        </main>
+
+
+        <script type="text/javascript">
+            var x = document.lastModified;
+            document.getElementById('lastModified').textContent = x;
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
