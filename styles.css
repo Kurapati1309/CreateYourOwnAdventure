@@ -27,7 +27,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
-    max-height: 500px;
+    max-height: 550px;
 }
 
 header h1 {
@@ -84,4 +84,73 @@ footer {
 
 footer span {
     background-color: #32ec1a;
+}
+
+.addendum-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: #5c6bc0;
+    border: none;
+    border-radius: 5px;
+}
+
+.addendum-button:hover {
+    background-color: #3f51b5;
+}
+
+
+.addendum-popup {
+    display: none; /* Hide by default */
+    position: fixed; /* Stay in place */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Width of the popup */
+    max-width: 600px; /* Maximum width */
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's above other content */
+    overflow: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    opacity: 0.99;
+}
+
+/* Optional: Full-screen overlay background */
+.addendum-overlay {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 999; /* Behind the popup, but above other content */
+}
+
+.addendum-popup h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Optional: Adjust as needed for spacing */
+    margin-bottom: 20px; /* Optional: Adjust as needed for spacing */
+}
+
+.addendum-popup p, .addendum-popup ul {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.addendum-popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+.addendum-popup::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 10px;
+    height: 100px;
 }

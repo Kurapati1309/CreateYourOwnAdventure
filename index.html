@@ -11,6 +11,7 @@
         <main>
             <div id="game-container">
                 <header>
+                    <button id="addendumButton" class="addendum-button">Addendum</button>
                     <h1>Whispers of the Enchanted Forest</h1>
                 </header>
                 <section id="story">
@@ -23,6 +24,27 @@
                     <!-- Story image here -->
                 </section>
             </div>
+
+            
+            <section class="addendum-popup" id="addendumPopup">
+                <h1>Addendum</h1>
+                <p>Embarking on the creation of "Whispers of the Enchanted Forest," I envisioned an interactive storytelling experience that would immerse players in a world of fantasy and adventure. My goal was to craft a narrative that allowed players to explore the enchanted forest through a series of choices, each leading to different paths and outcomes. The journey of bringing this vision to life was filled with both challenges and insights, shaping the project into its final form.</p>
+                <h3>Process and Creative Choices</h3>
+                <p>The project's foundation was built on HTML, CSS, and JavaScript, with each playing a pivotal role in the story's interactivity and presentation. I started with the HTML structure, designing a simple yet effective layout that consisted of a game container, sections for the story text, choices, and an image container to enhance the narrative with visuals.</p>
+                <p>For the visual design, I employed CSS to create an engaging and thematic appearance. I aimed for a mystical and inviting look, using a color palette that evoked the forest's mystery and enchantment. The styles.css file, though not detailed here, was crafted to support this aesthetic, ensuring a seamless and immersive experience for the player.</p>
+                <p>The JavaScript logic was the project's backbone, encapsulating the interactive storytelling mechanism. I defined a storyStages object, where each property represented a stage in the story, containing the narrative text, image path, and choices leading to subsequent stages. This structure allowed for flexibility and scalability, enabling me to add or modify the story's paths with relative ease.</p>
+                
+                <h3>Challenges and Solutions</h3>
+                <p>One significant challenge was maintaining state across the story's progression. To address this, I utilized the updatePage function to dynamically update the story text, choices, and images based on the player's selections. This approach ensured that the game's state was consistent and reflective of the player's journey through the enchanted forest.</p>
+                <p>Another challenge was enhancing user engagement. I wanted to ensure that players felt truly immersed in the story, making each choice meaningful. To achieve this, I carefully crafted each narrative path to offer unique experiences and outcomes, encouraging players to explore different choices on subsequent playthroughs.</p>
+
+                <h3>Insights Gained</h3>
+                <p>Throughout the development process, I learned the importance of narrative coherence and player agency. Ensuring that the story remained engaging and logical, regardless of the choices made, was crucial. This required meticulous planning and creativity, especially when intertwining storylines and outcomes.</p>
+                <p>I also gained valuable insights into interactive design principles, particularly in crafting an intuitive and user-friendly interface. The choice buttons and visual feedback mechanisms were designed to keep players informed of their progress and engaged with the story.</p>
+
+                <h3>Conclusion</h3>
+                <p>Creating "Whispers of the Enchanted Forest" was a journey of creativity, problem-solving, and learning. The challenges faced along the way were invaluable in pushing the boundaries of my abilities and understanding of interactive storytelling. The Mid-Term project is a testament to the power of narrative and interactivity in creating immersive experiences. As players traverse the myriad paths of the enchanted forest, I hope they find a sense of adventure, mystery, and the joy of choice-driven storytelling.</p>
+            </section>
 
             <footer>
                 <p>Last updated: <span id="lastModified"></span></p>

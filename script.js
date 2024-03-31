@@ -277,3 +277,22 @@ function endGame() {
 
 // Event listener to start the game when the window loads
 window.onload = startGame;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Open the popup
+    addendumButton.addEventListener('click', () => {
+        addendumPopup.style.display = 'block';
+        // Optionally display overlay
+        document.querySelector('.addendum-overlay').style.display = 'block';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (!addendumPopup.contains(event.target) && event.target != addendumButton) {
+            addendumPopup.style.display = 'none';
+            // Hide overlay if you're using one
+            document.querySelector('.addendum-overlay').style.display = 'none';
+        }
+    });
+});
+
